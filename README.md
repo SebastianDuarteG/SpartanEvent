@@ -16,4 +16,4 @@
 >student life here at UNCG and it will allow for a more fulfilling 
 >college experience.
 
-![Use Case Diagram]()
+![Use Case Diagram](https://github.com/SebastianDuarteG/SpartanEvent/blob/main/user_Case.png)
