@@ -1,0 +1,49 @@
+body {
+    color: white;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    background-image: linear-gradient(rgba(0, 8, 51, 0.9), rgba(0, 8, 51, 0.9)), url(../images/UNCGbackimg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.logIn {
+
+    margin-top: 300px;
+    text-align: center;
+}
+
+.logIn h1 {
+    font-size: 30pt;
+    margin: 0;
+}
+
+.logIn p {
+    font-size: 10pt;
+}
+
+.logOption {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logOption p {
+    border: solid white 3px;
+    width: 120px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+a {
+    text-decoration: none;
+    color: white;
+}
