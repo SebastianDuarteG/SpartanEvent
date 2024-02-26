@@ -20,6 +20,7 @@ body {
 .header h1 {
     padding-left: 30px;
 }
+
 a {
     text-decoration: none;
     color: white;
@@ -46,7 +47,7 @@ a {
     margin-top: 20px;
 }
 
-#btnBox button {
+#btn {
     margin-right: 20px;
     background-color: rgb(38, 40, 41);
     border: solid 2px white;
@@ -56,4 +57,61 @@ a {
     cursor: pointer;
     border-radius: 5px;
     color: white;
+}
+
+.eventContent {
+    margin-top: 20px;
+    border: solid 2px white;
+    min-height: 300px;
+}
+
+.eventContentInner {
+    margin: 20px;
+
+}
+
+#generalDisplay {
+    display: flex;
+}
+
+#eventTitle {
+    border: solid 1px white;
+    margin-bottom: 10px;
+}
+
+#eventImg {
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px white;
+    max-width: 600px;
+}
+
+#eventImg button {
+    margin-top: 65px;
+    height: 20%;
+}
+
+.eventContentInner img {
+    height: auto;
+    width: 30%;
+}
+
+#dateTimeLocation {
+    margin-left: 200px;
+}
+
+#date {
+    border: solid 1px white;
+}
+
+#time {
+    border: solid 1px white;
+}
+
+#location {
+    border: solid 1px white;
+}
+
+#eventDescription {
+    border: solid 1px white;
 }
