@@ -77,13 +77,20 @@ a {
 #eventTitle {
     border: solid 1px white;
     margin-bottom: 10px;
+    padding-left: 10px;
 }
+
+#generalDisplay {
+margin-bottom: 10px;
+}
+
 
 #eventImg {
     display: flex;
     justify-content: space-between;
     border: solid 1px white;
     max-width: 600px;
+    padding: 10px;
 }
 
 #eventImg button {
@@ -102,16 +109,20 @@ a {
 
 #date {
     border: solid 1px white;
+    padding-left: 5px;
 }
 
 #time {
     border: solid 1px white;
+    padding-left: 5px;
 }
 
 #location {
     border: solid 1px white;
+    padding-left: 5px;
 }
 
 #eventDescription {
     border: solid 1px white;
+    padding-left: 5px;
 }
