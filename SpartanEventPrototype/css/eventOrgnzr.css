@@ -47,7 +47,7 @@ a {
     margin-top: 20px;
 }
 
-#btn {
+.btn, .btnUserList {
     margin-right: 20px;
     background-color: rgb(38, 40, 41);
     border: solid 2px white;
@@ -57,6 +57,10 @@ a {
     cursor: pointer;
     border-radius: 5px;
     color: white;
+}
+
+.btnUserList {
+    float: right;
 }
 
 .eventContent {
@@ -70,11 +74,11 @@ a {
 
 }
 
-#generalDisplay {
+.generalDisplay {
     display: flex;
 }
 
-#eventTitle {
+.eventTitle {
     border: solid 1px white;
     margin-bottom: 10px;
     padding-left: 10px;
@@ -85,7 +89,7 @@ margin-bottom: 10px;
 }
 
 
-#eventImg {
+.eventImg {
     display: flex;
     justify-content: space-between;
     border: solid 1px white;
@@ -93,7 +97,7 @@ margin-bottom: 10px;
     padding: 10px;
 }
 
-#eventImg button {
+.eventImg button {
     margin-top: 65px;
     height: 20%;
 }
@@ -103,26 +107,30 @@ margin-bottom: 10px;
     width: 30%;
 }
 
-#dateTimeLocation {
+.dateTimeLocation {
     margin-left: 200px;
 }
 
-#date {
+.date {
     border: solid 1px white;
     padding-left: 5px;
 }
 
-#time {
+.time {
     border: solid 1px white;
     padding-left: 5px;
 }
 
-#location {
+.location {
     border: solid 1px white;
     padding-left: 5px;
 }
 
-#eventDescription {
+.eventDescription, .eventDescription2 {
     border: solid 1px white;
     padding-left: 5px;
+}
+
+.eventDescription2{
+    padding:10px;
 }

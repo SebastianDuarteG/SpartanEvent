@@ -5,68 +5,94 @@
 
 <title> Admin Event Page </title>
 
-<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/eventOrgnzr.css">
 
 </head>
 
 <body>
-    <header class="flex-container">
-        <a href=#>SPARTAN EVENT</a>
-        <a href="adminEvent.html">Events</a>
-        <a href="adminUserList.html">Users</a>
-        <a href=#>Logout</a>
-    </header>
-    <br>
+    <div class="header">
+        <h1>Spartan Events</h1>
 
-    <section>
-        <h1>Event Name</h1>
-        <small> From: Event Organizer</small>
-        <br><br>
+        <nav class="navigation">
+            <ul class="navbar">
+                <li><a class="navlink" href="#">View Events</a></li>
+                <li><a class="navlink" href="#">View Users</a></li>
+                <li><a class="navlink" href="#">Sign Out</a></li>
+            </ul>
+        </nav>
 
-        <strong>Event Description:</strong> <br>
-        Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua. 
-        <br>
-        <br>
-        <button>DELETE</button>    <button>FLAG</button>
+    </div>
 
-    </section>
+    <div class="eventContent">
+        <div class="eventContentInner">
+            <div class="eventTitle">
+                <h2>Title: Event Title</h2>
+            </div>
+
+            <div class="generalDisplay">
+                <div class="eventImg">
+                    <img src="images/UNCGlogo.jpg" alt="UNCG logo">
+                </div>
+                <div class="dateTimeLocation">
+                    <p class="date">Date: 01/01/2000</p>
+                    <p class="time">Time: 12:00 AM</p>
+                    <p class="location">Location: Enter Location Here</p>
+                </div>
+            </div>
+
+            <div class="eventDescription">
+                <p><strong>Description:</strong></p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. 
+                </p>
+            </div>
+            <br>
+            <button class="btn">DELETE</button>    <button class="btn">FLAG</button>
+        </div>
+    </div>
     <br>
-    <br>
-    <section>
-        <h1>Comments:</h1>
-        <br>
-        <section>
-            <small>From: User Name</small> <br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. 
-            <br>
-            <br>
-            <button>DELETE</button>  <button>FLAG</button>
-        </section>
-        <br>
-        <section>
-            <small>From: User Name</small> <br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. 
-            <br>
-            <br>
-            <button>DELETE</button>  <button>FLAG</button>
-        </section>
-        <br>
-        <section>
-            <small>From: User Name</small> <br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. 
-            <br>
-            <br>
-            <button>DELETE</button>  <button>FLAG</button>
-        </section>
-    </section>
+    <div class="eventContent">
+        <div class="eventContentInner">
+            <div class="eventTitle">
+                <h2>Comments:</h2>
+            </div>
+            <div class="eventDescription">
+                <p><strong>From: User Name</strong></p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. 
+                </p>
+                <button class="btn">DELETE</button>  <button class="btn">FLAG</button>
+                <br>
+                <br>
+            </div>
+            <div class="eventDescription">
+                <p><strong>From: User Name</strong></p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. 
+                </p>
+                <button class="btn">DELETE</button>  <button class="btn">FLAG</button>
+                <br>
+                <br>
+            </div>
+            <div class="eventDescription">
+                <p><strong>From: User Name</strong></p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. 
+                </p>
+                <button class="btn">DELETE</button>  <button class="btn">FLAG</button>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
 
 
 </body>
