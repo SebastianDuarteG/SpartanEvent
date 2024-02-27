@@ -85,6 +85,10 @@ a {
     padding-left: 10px;
 }
 
+.titleInner {
+    display: flex;
+}
+
 #generalDisplay {
 margin-bottom: 10px;
 }
