@@ -3,60 +3,78 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Organizer</title>
-    <link rel="stylesheet" href="css/eventOrgnzr.css"> 
-    <link rel="stylesheet" type="text/css" href="css/eventOrgnzr.css">
+    <title> Organizer </title>
+    <link rel="stylesheet" href="css/user.css">
 </head>
 
 <body>
-    <div class="container"> 
+    <div class="container">
         <div class="header">
             <h1>Spartan Events</h1>
 
             <nav class="navigation">
                 <ul class="navbar">
                     <li><a class="navlink" href="#">View Events</a></li>
-                    <li><a class="navlink" href="#">My Events</a></li>
+                    <li><a class="navlink" href="#">View RSVPs</a></li>
                     <li><a class="navlink" href="#">Sign Out</a></li>
                 </ul>
             </nav>
         </div>
 
-        <div class="searchBar">
-            <input type="text" placeholder="Search for event...">
-            <button type="button">Search</button>
-        </div>
+        <div class="mainContent">
+                
 
-        <div class="upcomingEvents">
-            <h2>Upcoming Events</h2>
-            <ul>
-                <li>
-                    <div class="event">
-                        <h3>Title: CS Club Meeting</h3>
-                        <p>Date: 02/27/2025</p>
-                        <p>Time: 6:30 PM</p>
-                        <button class="viewEventBtn" type="button">View Event</button>
-                        <button class="favoriteBtn" type="button">Favorite</button>
+            <div class="eventContent">
+                <div class="eventContentInner">
+                    <div class="eventTitle">
+                        <h2>CS Club Meeting</h2>
                     </div>
-                </li>
-                <!-- Other upcoming events -->
-            </ul>
-        </div>
+                    <div class="generalDisplay">
+                        <div class="eventImg">
+                            <img src="images/UNCGlogo.jpg" alt="UNCG logo">
+                        </div>
+                        <div class="dateTimeLocation">
+                            <p class="date">Date: 02/27/2025</p>
+                            <p class="time">Time: 6:30 PM</p>
+                            <p class="location">Location: Petty Building room 123</p>
+                        </div>
+                    </div>
+                    <div class="eventDescription">
+                        <P>The Computer Science Clue will be holding a meeting to help our fellow CS students
+                            find out more about what we are doing and how we are doing in our CS classes.
+                            This will be a general get-together, feel free to chat and ask questions.
+                        </P>
+                    </div>  
+                    <div class="commentbox">
+                        <div class="eventDescription">
+                            <p><strong>User Name</strong></p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua. 
+                            </p>
+                        
+                        </div>
+                        <div class="eventDescription"> 
+                            <p><strong>User Name</strong></p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua. 
+                            </p>
+            
+                        </div>
+                        <input class = "commentinput"type="text" placeholder="Comment...">
+    
+                    </div>
 
-        <div class="comments">
-            <h2>Comments</h2>
-            <!-- Comment section -->
-        </div>
+                </div>
+                </div>
+            </div>
 
-        <div class="footer">
-            <nav class="navigation">
-                <ul class="navbar">
-                    <li><a class="navlink" href="#">View Favorites</a></li>
-                    <li><a class="navlink" href="#">RSVP</a></li>
-                </ul>
-            </nav>
+            <div class="RSVP">
+                <button class="btn" type="button">RSVP</button>
+            </div>
         </div>
     </div>
 </body>
-
-</html>
