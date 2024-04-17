@@ -1,0 +1,6 @@
+DROP TABLE comment;
+DROP TABLE RSVP;
+DROP TABLE event;
+DROP TABLE organizer;
+DROP TABLE admin;
+DROP TABLE user;
