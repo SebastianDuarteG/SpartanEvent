@@ -5,6 +5,13 @@
 
 ## Description
 
+To run application:<br />
+
+1. initialize node.js with app.js as entry point <br />
+2. install node dependencies: express, multer, sqlite, sqlite3 <br />
+3. run nodemon app.js on terminal.
+4. Open index.html and use app. 
+
 >Spartan Event (SE) is a tool for event organizers to communicate with
 >UNCG students. Its design allows for seamless use and accessible use. 
 >It is a web application that can be accessed through a web browser.

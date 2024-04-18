@@ -1,5 +1,6 @@
 CREATE table user (
 	userId   INTEGER PRIMARY KEY,
+	userName varchar (50) NOT NULL UNIQUE,
 	userEmail varchar(50) NOT NULL UNIQUE,
 	userPassword varchar (50) NOT NULL,
 	flag int not null
@@ -25,8 +26,8 @@ CREATE TABLE event (
 	description	varchar (300) NOT NULL,
 	flag	int NOT NULL,
 	orgId   INTEGER NOT NULL,
-	FOREIGN KEY (orgID) 
-	REFERENCES organizer (orgID) 
+	FOREIGN KEY (orgId) 
+	REFERENCES organizer (orgId) 
 	on DELETE CASCADE
 	on UPDATE CASCADE
 );
@@ -46,7 +47,7 @@ CREATE TABLE RSVP(
 CREATE TABLE comment (
 	content varchar (300) NOT NULL,
 	userId	INTEGER NOT NULL,
-	eventID	INTEGER NOT NULL,
+	eventId	INTEGER NOT NULL,
 	PRIMARY KEY (userId, eventId),
 	FOREIGN KEY (userId)
 	REFERENCES user (userId)
