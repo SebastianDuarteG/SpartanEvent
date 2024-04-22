@@ -1,0 +1,76 @@
+<!-- eventOgnzr.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Organizer </title>
+    <link rel="stylesheet" href="/css/eventOrgnzr.css">
+    <script src="/scripts/organizer.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Spartan Events</h1>
+
+            <nav class="navigation">
+                <ul class="navbar">
+                    <li><a class="navlink" href="user.html">View Events</a></li>
+                    <li><a class="navlink" href="eventOgnzr.html">My Events</a></li>
+                    <li><a class="navlink" href="index.html">Sign Out</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="mainContent">
+            <div id="btnBox">
+                <button class="btn" type="button" id="newEventBtn">New Event ➕ </button>
+            </div>
+
+            <%- include('./partials/new-event-form') %>
+
+                <% events.forEach(event=> { %>
+                    <div class="eventContent">
+                        <div class="eventContentInner">
+                            <div class="eventTitle">
+                                <h2>Title: <%= event.title %>
+                                </h2>
+                            </div>
+                            <div class="generalDisplay">
+                                <div class="eventImg">
+                                    <img src="<%= event.imgPath %>" alt="Event Image">
+                                    <button class="edit-pic-btn" type="button">Edit Pictures</button>
+                                </div>
+                                <div class="dateTimeLocation">
+                                    <p class="date">Date: <%= event.eventDate %>
+                                    </p>
+                                    <p class="time">Time: <%= event.eventTime %>
+                                    </p>
+                                    <p class="location">Location: <%= event.location %>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="eventDescription">
+                                <p>Description:</p>
+                                <p>
+                                    <%= event.description %>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <button class="delete-event-btn" data-event-id="<%= event.eventId %>"
+                                type="button">Delete</button>
+                            <button class="edit-event-btn" data-event-id="<%= event.eventId %>"
+                                type="button">Edit</button>
+                        </div>
+                    </div>
+                    <% }); %>
+
+        </div>
+    </div>
+</body>
+
+</html>

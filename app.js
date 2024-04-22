@@ -14,11 +14,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 const eventRouter = require("./routes/event.route");
 app.use("/SpartanEvent", eventRouter);
-
-
-
 // routes to landing page etc.
 
+app.get("/", (req, res) => {
+    res.render("index", { title: 'Login' });
+});
 
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {

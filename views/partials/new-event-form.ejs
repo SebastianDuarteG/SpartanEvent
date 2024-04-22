@@ -1,0 +1,29 @@
+<form id="newEventForm" style="display: none;" method="POST" action="/SpartanEvent/newEvent">
+    <div class="eventTitle" style="margin-top: 20px;">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" placeholder="Title">
+    </div>
+    <div class="generalDisplay">
+        <div class="eventImg">
+            <label for="imgPath">Image URL:</label>
+            <input type="text" id="imgPath" name="imgPath" placeholder="Image Path">
+        </div>
+        <div class="dateTimeLocation">
+            <label for="eventDate">Date:</label>
+            <input type="text" id="eventDate" name="eventDate" placeholder="Date">
+            <label for="eventTime">Time:</label>
+            <input type="text" id="eventTime" name="eventTime" placeholder="Time">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="Location">
+        </div>
+    </div>
+    <div class="eventDescription" style="margin-bottom: 20px;">
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" placeholder="Description"></textarea>
+    </div>
+
+    <input type="hidden" id="orgId" name="orgId" value="<%= orgId %>">
+
+    <button class="btn" type="submit" id="saveEventBtn">Save Event</button>
+    <button class="btn" type="button" id="cancelBtn">Cancel</button>
+</form>
