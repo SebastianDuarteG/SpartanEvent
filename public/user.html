@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> User </title>
+    <title>Organizer</title>
     <link rel="stylesheet" href="css/user.css">
 </head>
 
@@ -14,16 +14,14 @@
 
             <nav class="navigation">
                 <ul class="navbar">
-                    <li><a class="navlink" href="user.html">View Events</a></li>
+                    <li><a class="navlink" href="#">View Events</a></li>
                     <li><a class="navlink" href="#">View RSVPs</a></li>
-                    <li><a class="navlink" href="index.html">Sign Out</a></li>
+                    <li><a class="navlink" href="#">Sign Out</a></li>
                 </ul>
             </nav>
         </div>
 
         <div class="mainContent">
-                
-
             <div class="eventContent">
                 <div class="eventContentInner">
                     <div class="eventTitle">
@@ -40,35 +38,19 @@
                         </div>
                     </div>
                     <div class="eventDescription">
-                        <P>The Computer Science Clue will be holding a meeting to help our fellow CS students
+                        <p>The Computer Science Club will be holding a meeting to help our fellow CS students
                             find out more about what we are doing and how we are doing in our CS classes.
                             This will be a general get-together, feel free to chat and ask questions.
-                        </P>
-                    </div>  
+                        </p>
+                    </div>
                     <div class="commentbox">
-                        <div class="eventDescription">
-                            <p><strong>User Name</strong></p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua. 
-                            </p>
-                        
+                        <div class="comments">
+                            <!-- Comments will be dynamically added here -->
                         </div>
-                        <div class="eventDescription"> 
-                            <p><strong>User Name</strong></p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua. 
-                            </p>
-            
-                        </div>
-                        <input class = "commentinput"type="text" placeholder="Comment...">
-    
+                        <input class="commentinput" type="text" placeholder="Comment...">
+                        <button class="commentbtn">Submit</button>
                     </div>
 
-                </div>
                 </div>
             </div>
 
@@ -77,4 +59,38 @@
             </div>
         </div>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const rsvpButton = document.querySelector('.btn');
+            const commentInput = document.querySelector('.commentinput');
+            const commentButton = document.querySelector('.commentbtn');
+            const commentsContainer = document.querySelector('.comments');
+
+            rsvpButton.addEventListener('click', function () {
+                // Logic to add the event to a list of RSVP'd events
+                // For example, you can send a request to a server to handle this
+                alert('RSVP Successful!');
+            });
+
+            commentButton.addEventListener('click', function () {
+                const commentText = commentInput.value;
+                if (commentText.trim() !== '') {
+                    // Create a new comment element
+                    const commentElement = document.createElement('div');
+                    commentElement.classList.add('eventDescription');
+                    commentElement.innerHTML = `
+                        <p><strong>User Name</strong></p>
+                        <p>${commentText}</p>
+                    `;
+                    // Append the new comment to the comments container
+                    commentsContainer.appendChild(commentElement);
+                    // Clear the input field after submitting the comment
+                    commentInput.value = '';
+                }
+            });
+        });
+    </script>
 </body>
+
+</html>
