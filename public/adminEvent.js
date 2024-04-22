@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', function(){
             .then (data =>{
             })
             .catch (error => console.error('Couldnt delete event',error));
-        
+        location.reload();
     }
 
     function flagEvent(eventId) {
@@ -260,7 +260,7 @@ document.addEventListener('DOMContentLoaded', function(){
             .then (data =>{
             })
             .catch (error => console.error('Couldnt flag event',error));
-        
+        location.reload();
     }
 
     function deleteComment(userId, eventId) {
@@ -319,6 +319,6 @@ document.addEventListener('DOMContentLoaded', function(){
             .then (data =>{
             })
             .catch (error => console.error('Couldnt flag comment',error));
-        
+        location.reload();
     }
 });
